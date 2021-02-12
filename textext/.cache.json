@@ -1,0 +1,12 @@
+{
+  "requirements_checker": {
+    "inkscape_executable": "C:\\Program Files\\Inkscape\\bin\\inkscape.exe",
+    "available_tex_to_pdf_converters": {
+      "pdflatex": "C:\\Users\\jorge\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+      "lualatex": "C:\\Users\\jorge\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\lualatex.exe",
+      "xelatex": "C:\\Users\\jorge\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\xelatex.exe"
+    },
+    "available_pdf_to_svg_converters": {}
+  },
+  "previous_exit_code": 0
+}

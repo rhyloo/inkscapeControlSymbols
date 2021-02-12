@@ -1,0 +1,12 @@
+{
+  "gui": {
+    "confirm_close": true,
+    "line_numbers": true,
+    "auto_indent": true,
+    "insert_spaces": true,
+    "tab_width": 4
+  },
+  "preamble": "C:\\Users\\jorge\\AppData\\Roaming\\inkscape\\extensions\\mechanic/circuitSymbolsPreamble.tex",
+  "scale": 1.0,
+  "previous_tex_command": "pdflatex"
+}
