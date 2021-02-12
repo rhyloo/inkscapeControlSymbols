@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>General</name>
+    <id>fsmMLK.controlSymbols.general</id>
+    <dependency type="executable" location="inx">controlSymbols.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Base.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Draw.py</dependency>
+    <param name="tab" type="notebook">
+        <page name="BLOCKS" appearance="minimal" gui-text="BLOCKS">
+            <hbox>
+                <vbox>
+                    <param name="blocksCONTINUOUS" type="optiongroup" appearance="combo" gui-text="Type:">
+                      <option value="transfcn">Transfer function</option>
+                      <option value="integrator">Integrator</option>
+                      <option value="derivative">Derivative</option>
+                      <option value="spacestate">Space-state</option>
+                    </param>
+                </vbox>
+
+	    <spacer/>
+	    <separator/>
+	    <spacer/>
+	    <vbox>
+	      <hbox>
+		<param name="blockCONTINUOUSVal" type="string"
+		       gui-text="Type your transfer function:"></param>
+	      </hbox>
+		<param name="blockTEXTColor" type="string"
+		       gui-text="Text color:"></param>
+
+	      <param name="blockBLOCKColor" type="string"
+		       gui-text="Block color:"></param>
+	    </vbox>
+	    </hbox>
+	</page>
+	<page name="SOURCES" appearance="minimal" gui-text="SOURCES">
+	              <hbox>x
+                <vbox>
+                    <param name="source" type="optiongroup" appearance="combo" gui-text="Type:">
+                      <option value="constant">Constant</option>
+                      <option value="step">Step</option>
+                      <option value="ramp">Ramp</option>
+                      <option value="impulse">Impulse</option>
+                    </param>
+                </vbox>
+
+	    <spacer/>
+	    <separator/>
+	    <spacer/>
+	    <vbox>
+	      <hbox>
+		<param name="sourceVal" type="string"
+		       gui-text="Type the value of the source:"></param>
+	      </hbox>
+	      <hbox>
+		<vbox>
+		<label appearance="header">Text properties</label>
+		<param name="sourceTEXTColor" type="string"
+		       gui-text="Color:"></param>
+                <param name="sourceREFPoint" type="optiongroup" appearance="combo" gui-text="Orientation">
+                      <option value="up">Up</option>
+                      <option value="down">Down</option>
+                      <option value="left">Left</option>
+                      <option value="right">Right</option>
+                </param>
+		</vbox>
+	      </hbox>
+	      <label appearance="header">Block properties</label>
+	      <param name="sourceBLOCKColor" type="string"
+		       gui-text="Color:"></param>
+	    </vbox>
+	    </hbox>
+	</page>
+    </param>
+    
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="rhyloo">
+                <submenu name="Control Symbols"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">controlSymbols.py</command>
+    </script>
+</inkscape-extension>
+
